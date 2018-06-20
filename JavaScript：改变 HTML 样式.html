@@ -7,17 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>我的第一段 JavaScript </h1>
+    <h1>我的第一段 JavaScript</h1>
 
-    <p id="demo">JavaScript 能改变 HTML 元素的内容</p>
+    <p id="demo">JavaScript 能改变 HTML 元素的样式</p>
 
     <script>
         function myFunction() {
-            x = document.getElementById("demo");
-            x.innerHTML = "Hello JavaScript!";
+            x = document.getElementById("demo")
+            x.style.color = "#F00"
         }
     </script>
 
-    <button type="button" onclick="myFunction()">点击这里</button>
+    <button type="button" onclick="myFunction()">点击我</button>
 </body>
 </html>
