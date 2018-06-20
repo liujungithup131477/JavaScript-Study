@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>验证输入的内容是不是数字</h1>
+
+    <p>请输入数字，如果数入的不是数字，浏览器会弹出提示</p>
+
+    <input type="text" id="demo">
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo").value
+            if (x == "" || isNaN(x)) {
+                alert("不是数字")
+            }
+        }
+    </script>
+
+    <button type="button" onclick="myFunction()">确定</button>
+</body>
+</html>
