@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <P>
+        JavaScript 能够直接写入 HTML 输出流中：
+    </P>
+
+    <script>
+        document.write("<h1>This is a heading</h1>")
+        document.write("<p>This is a paragraph.</p>")
+    </script>
+
+    <p>
+        您只能在 HTML 输出流中使用 <strong>document.write</strong>。
+        如果您在文档已加载后使用它 （比如在函数中），会覆盖整个文档。
+    </p>
+</body>
+</html>
