@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 变量</h1>
+
+    <p>假设 y=5，计算 x=y+2，并显示结果。</p>
+
+    <button type="button" onclick="myFunction()">点我</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var y = 5;
+            // var y; 再次重复定义y依然等于5
+            var X = y + 2;
+            document.getElementById("demo").innerHTML = "x = " + X;
+        }
+    </script>
+</body>
+</html>
