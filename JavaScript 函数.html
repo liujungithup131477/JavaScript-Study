@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>本例调用的函数会执行一个计算，然后返回结果：</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(num1,num2) {
+            return num1 + num2;
+        }
+
+        document.getElementById("demo").innerHTML = myFunction(5,7)
+    </script>
+</body>
+</html>
