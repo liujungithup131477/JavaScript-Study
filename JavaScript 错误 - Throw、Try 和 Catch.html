@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function message() {
+            try {
+                var x = document.getElementById("demo").value;
+                if (x == "") throw "empty";
+                if (isNaN(x)) throw "不是一个整数";
+                if (x > 10) throw "大了";
+                if (x < 5) throw "小了";
+            } catch (error) {
+                var y = document.getElementById("mess");
+                y.innerHTML = "Error: " + error + ".";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>我的JavaScript 错误语法测试事例</h1>
+    <p>Please input a number between 5 and 10:</p>
+    <input type="text" id="demo">
+    <button type="button" onclick="message()">检验值</button>
+
+    <p id="mess"></p>
+</body>
+</html>
