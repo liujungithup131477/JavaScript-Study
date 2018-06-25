@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript HTML DOM - 改变 CSS</h1>
+
+    <p id="p1">张雪迎</p>
+    <p id="p2">宋祖儿</p>
+
+    <button type="button" onclick="modfiy()">点击这里！</button>
+
+    <p>隐藏元素</p>
+    <!-- <input type="button" value="隐藏文本" onclick="document.getElementById('p1').style.visibility='hidden'" /> -->
+    <input type="button" value="显示" onclick="document.getElementById('p1').style.visibility='visible'">
+    <input type="button" value="隐藏" onclick="document.getElementById('p1').style.visibility='hidden'">
+
+    <script>
+        function modfiy() {
+            document.getElementById("p1").style.color = "green";
+            document.getElementById("p2").style.color = "pink";
+        }
+    </script>
+</body>
+</html>
